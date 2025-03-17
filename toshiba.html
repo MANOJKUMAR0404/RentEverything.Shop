@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - RentEverything.Shop</title>
+    <link href="product_page2.css" rel="stylesheet">
+    <link rel="icon" type="png" href="images/favicon.png" sizes="512x512">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🛒</span>
+                <span>RentEverything.Shop</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Products</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="separator">›</span>
+            <a href="#">Products</a>
+            <span class="separator">›</span>
+            <span>Toshiba Laptop</span>
+        </div>
+
+        <div class="product-container">
+            <div class="product-images">
+                <div class="main-image-container">
+                    <img src="images/toshiba_laptop/toshiba1.jpg" alt="Dell Keyboard with Mouse" class="main-image" id="main-product-image">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="images/toshiba_laptop/toshiba1.jpg" alt="keyboard Thumbnail 1" class="thumbnail active" onclick="changeImage(this)">
+                    <img src="images/toshiba_laptop/toshiba2.jpeg" alt="keyboard Thumbnail 2" class="thumbnail" onclick="changeImage(this)">
+                    <img src="images/toshiba_laptop/toshiba3.jpg" alt="keyboard Thumbnail 2" class="thumbnail" onclick="changeImage(this)">
+                    <img src="images/toshiba_laptop/toshiba3.jpeg" alt="keyboard Thumbnail 2" class="thumbnail" onclick="changeImage(this)">
+                    
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Toshiba Satellite L755</h1>
+                <p class="product-category">Category: Laptops & Notebooks</p>
+                <p class="product-price">₹399/day</p>
+                <p class="availability">✓ Available Now</p>
+                <div class="product-rating">
+                    <div class="stars">★★★★★</div>
+                    <span class="review-count">(57 reviews)</span>
+                </div>
+                <div class="product-description">
+                    <p>The Toshiba Satellite L755 is a versatile laptop designed for everyday computing, multimedia, and productivity. Equipped with a powerful Intel processor, vibrant HD display, and spacious storage, it ensures smooth performance. Whether you're browsing, streaming, or working, the L755 delivers reliability and efficiency. Its sleek design and durable build make it a great choice for students and professionals alike.</p>
+                </div>
+                
+                <div class="product-specs">
+                    <h3>Specifications:</h3>
+                    <ul class="spec-list">
+                        <li><span>Brand:</span> <span>Toshiba </span></li>
+                        <li><span>Model:</span> <span>Satellite L755 </span></li>
+                        <li><span>Processor:</span> <span> Intel Core i5-2430M (2.5 GHz, Turbo Boost up to 3.0 GHz)</span></li>
+                        <li><span>Graphics:</span> <span>Intel HD Graphics 3000 / NVIDIA GeForce GT 525M</span></li>
+                        <li><span>Operating System:</span> <span>Windows 10 Pro</span></li>
+                    </ul>
+                </div>
+                
+                <button class="rent-button" id="rent-now-button">Rent Now</button>
+            </div>
+        </div>
+
+        <div class="product-tabs">
+            <ul class="tab-list">
+                <li class="tab-item active" onclick="switchTab(0)">Description</li>
+                <li class="tab-item" onclick="switchTab(1)">Specifications</li>
+                <li class="tab-item" onclick="switchTab(2)">Rental Terms</li>
+                <li class="tab-item" onclick="switchTab(3)">Reviews</li>
+            </ul>
+            <div class="tab-content active">
+                <h3>Product Description</h3>
+                <p>The Toshiba Satellite L755 is a feature-packed laptop designed to provide a balance of power, performance, and affordability. Ideal for students, professionals, and casual users, this laptop offers smooth multitasking and a user-friendly experience.</p>
+                <p>The 15.6-inch HD LED-backlit display provides a crisp and vibrant viewing experience with a resolution of 1366 x 768 pixels. Whether you're watching movies, editing photos, or working on spreadsheets, the display ensures clarity and bright visuals. It features Intel HD Graphics 3000, and for users needing extra graphics power, an NVIDIA GeForce GT 525M variant is available, making it suitable for light gaming and media editing.</p>
+                <p>Designed with a sleek silver-gray finish, the Toshiba Satellite L755 is both stylish and durable. Its full-size keyboard provides a comfortable typing experience, making it great for long working hours. The laptop is lightweight enough for easy portability while still being sturdy for everyday use.</p>
+                
+            </div>
+            <div class="tab-content">
+                <h3>Detailed Specifications</h3>
+                <ul>
+                    <li><strong>Brand:</strong> Toshiba</li>
+                    <li><strong>Model:</strong> Satellite L755</li>
+                    <li><strong>Processor:</strong> Intel Core i5-2430M (2.5GHz, Turbo Boost up to 3.0GHz)</li>
+                    <li><strong>Graphics:</strong> Intel HD Graphics 3000 / NVIDIA GeForce GT 525M</li>
+                    <li><strong>Display:</strong> 15.6-inch HD LED-backlit (1366 x 768 resolution)</li>
+                    <li><strong>RAM:</strong> 6GB DDR3 (expandable up to 8GB)</li>
+                    <li><strong>Storage:</strong> 500GB HDD (5400 RPM)</li>
+                    <li><strong>Operating System:</strong> Windows 7 Home Premium (Upgradeable to Windows 10)</li>
+                    <li><strong>Keyboard:</strong> Full-size with numeric keypad</li>
+                    <li><strong>Battery Life:</strong> Up to 5 hours</li>
+                    <li><strong>Connectivity:</strong> Wi-Fi 802.11b/g/n, Bluetooth 3.0, HDMI, VGA</li>
+                    <li><strong>Ports:</strong> 2x USB 2.0, 1x USB 3.0, 1x HDMI, 1x Ethernet, 1x Audio Jack</li>
+                    <li><strong>Weight:</strong> 2.5 kg (5.5 lbs)</li>
+                    <li><strong>Dimensions:</strong> 15.0 x 9.8 x 1.5 inches</li>
+                    <li><strong>Additional Features:</strong> Durable build, stylish design, comfortable typing experience</li>
+                </ul>              
+            </div>
+            <div class="tab-content">
+                <h3>Rental Terms</h3>
+                <p><strong>Rental Period:</strong> Minimum rental period is 1 hour</p>
+                <p><strong>Deposit:</strong> A security deposit of ₹500 is required, refundable upon return in good condition.</p>
+                <p><strong>ID Requirement:</strong> Valid government-issued photo ID required.</p>
+                <p><strong>Pickup/Return:</strong> Equipment must be picked up and returned during business hours (9am-6pm).</p>
+                <p><strong>Late Returns:</strong> Late returns will be charged an additional day's rental fee plus a ₹200 late fee.</p>
+                <p><strong>Damage/Loss:</strong> Renter is responsible for any damage beyond normal wear and tear or loss of equipment.</p>
+                <p><strong>Insurance:</strong> Optional rental insurance available.</p>
+                <p><strong>Cancellation Policy:</strong> Full refund if cancelled 48+ hours before rental. 50% refund if cancelled 24-48 hours before. No refund if cancelled less than 24 hours before rental.</p>
+            </div>
+            <div class="tab-content">
+                <h3>Customer Reviews</h3>
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <h4>Reliable and Smooth Performance</h4>
+                    <p><em>By Arjun M. on March 10, 2025</em></p>
+                    <p>I've been using the Toshiba Satellite L755 for over a year, and it still runs smoothly. The performance is excellent for daily tasks, and the display is bright and clear. The build quality is solid, and the keyboard is very comfortable to use.</p>
+                </div>
+                <hr>
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <h4>Perfect for Students</h4>
+                    <p><em>By Meena S. on February 25, 2025</em></p>
+                    <p>This laptop is ideal for students! It handles my assignments and online research efficiently. The battery life is decent, and the overall speed is impressive. I love the sleek design, and it’s easy to carry around, making it perfect for college work.</p>
+                </div>
+                <hr>
+                <div class="review">
+                    <div class="stars">★★★★☆</div>
+                    <h4>Good for Work and Entertainment</h4>
+                    <p><em>By Karthik R. on February 10, 2025</em></p>
+                    <p>The Toshiba Satellite L755 is a great budget laptop for work and entertainment. The storage is sufficient, and the full-size keyboard is a nice touch. Heavy gaming isn't the best on this, but for everything else, it performs well.</p>
+                </div>                
+                
+            </div>
+        </div>
+    </main>
+    <div id="rental-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" id="close-modal">&times;</span>
+        <h2 class="form-title">Rent This Combo</h2>
+        <div id="success-message" class="success-message">
+            Thank you! Your rental request has been submitted. We will contact you shortly to confirm your reservation.
+        </div>
+        <form id="rental-form" method="POST" action="https://api.web3forms.com/submit">
+            <input type="hidden" name="access_key" value="2527604e-31e9-410c-8cff-70a52dad9f58">
+            <input type="hidden" name="subject" value="Toshiba Laptop  Rental Request">
+            <input type="hidden" name="product" value="Toshiba Laptop L755">
+            <div class="form-group">
+                <label for="product-id" class="form-label">Product Id</label>
+                <input type="text" id="product-id" name="product-id" class="form-input" required value="TL-2025-03-17" readonly>
+                <div class="error-message" id="name-error">Please enter your full name</div>
+            </div>
+            <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+                <div class="error-message" id="name-error">Please enter your full name</div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+                <div class="error-message" id="email-error">Please enter a valid email address</div>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input" required>
+                <div class="error-message" id="phone-error">Please enter a valid phone number</div>
+            </div>
+            <div class="form-group">
+                <label for="pickup-date" class="form-label">Pickup Date & Time</label>
+                <input type="datetime-local" id="pickup-date" name="pickup-date" class="form-input" required>
+                <div class="error-message" id="pickup-error">Please select a valid pickup date and time</div>
+            </div>
+
+            <!-- Rental Duration Selection -->
+            <div class="form-group">
+                <label for="duration-number" class="form-label">Rental Duration</label>
+                <div class="duration-container">
+                    <select id="duration-number" name="duration-number" class="form-select" required>
+                        <option value="">Select Duration</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="7">7</option>
+                        <option value="14">14</option>
+                        <option value="30">30</option>
+                    </select>
+                    <select id="duration-unit" name="duration-unit" class="form-select" required>
+                        <option value="">Select Unit</option>
+                        <option value="hours">Hours</option>
+                        <option value="days">Days</option>
+                        <option value="weeks">Weeks</option>
+                    </select>
+                </div>
+                <div class="error-message" id="duration-error">Please select a rental duration</div>
+            </div>
+
+            <!-- Rental Type Selection -->
+            <div class="form-group">
+                <label for="rental-type" class="form-label">Rental Type</label>
+                <select id="rental-type" name="rental-type" class="form-select" required>
+                    <option value="">Select Option</option>
+                    <option value="pickup">Pickup from Store</option>
+                    <option value="delivery">Home Delivery (within 5 km in Namakkal)</option>
+                </select>
+                <div class="error-message" id="rental-type-error">Please select a rental type</div>
+            </div>
+
+            <!-- Aadhaar Requirement Notice -->
+            <div class="form-group">
+                <p class="aadhaar-notice"><strong>Important:</strong> You must bring your <strong>original Aadhaar</strong> or a <strong>colored Aadhaar Xerox</strong> for verification at the time of pickup/delivery.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="comments" class="form-label">Comments or Special Requirements</label>
+                <textarea id="comments" name="comments" class="form-input" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="form-submit" id="form-submit-button">Submit Rental Request</button>
+        </form>
+    </div>
+</div>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 RentEverything.Shop. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Service</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    <script src="product_page2.js"></script>
+    
+</body>
+</html>

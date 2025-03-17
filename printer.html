@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - RentEverything.Shop</title>
+    <link href="product_page2.css" rel="stylesheet">
+    <link rel="icon" type="png" href="images/favicon.png" sizes="512x512">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🛒</span>
+                <span>RentEverything.Shop</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Products</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="separator">›</span>
+            <a href="#">Products</a>
+            <span class="separator">›</span>
+            <span>Brother Printer</span>
+        </div>
+
+        <div class="product-container">
+            <div class="product-images">
+                <div class="main-image-container">
+                    <img src="images/printer/printer1.jpg" alt="Dell Keyboard with Mouse" class="main-image" id="main-product-image">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="images/printer/printer1.jpg" alt="printer Thumbnail 1" class="thumbnail active" onclick="changeImage(this)">
+                    <img src="images/printer/printer2.jpg" alt="printer Thumbnail 2" class="thumbnail" onclick="changeImage(this)">
+                    <img src="images/printer/printer3.jpg" alt="printer Thumbnail 3" class="thumbnail" onclick="changeImage(this)">
+                    <img src="images/printer/printer4.jpg" alt="printer Thumbnail 4" class="thumbnail" onclick="changeImage(this)">
+                    <img src="images/printer/printer5.jpg" alt="printer Thumbnail 5" class="thumbnail" onclick="changeImage(this)">
+                    
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Brother HL-L2321D – High-Speed Monochrome Laser Printer</h1>
+                <p class="product-category">Category: Printers & Accessories</p>
+                <p class="product-price">₹399/day</p>
+                <p class="availability">✓ Available Now</p>
+                <div class="product-rating">
+                    <div class="stars">★★★★★</div>
+                    <span class="review-count">(69 reviews)</span>
+                </div>
+                <div class="product-description">
+                    <p>The Brother HL-L2321D is a fast and efficient monochrome laser printer designed for home and office use. 
+                        With automatic duplex printing, it helps save paper while delivering high-quality prints. 
+                        Its high-speed printing capability ensures quick output without compromising clarity. 
+                        The compact and sturdy design makes it a space-saving choice for any workspace. 
+                        This printer is ideal for professionals who need sharp and consistent black-and-white prints.</p>
+                </div>
+                
+                <div class="product-specs">
+                    <h3>Specifications:</h3>
+                    <ul class="spec-list">
+                        <li><span>Brand:</span> <span>Brother </span></li>
+                        <li><span>Model:</span> <span>HL-L2321D </span></li>
+                        <li><span>Print Technology:</span> <span> Monochrome Laser</span></li>
+                        <li><span>Print Speed:</span> <span>Up to 30 pages per minute</span></li>
+                        <li><span>Resolution:</span> <span>2400 x 600 dpi for crisp text and images</span></li>
+                    </ul>
+                </div>
+                
+                <button class="rent-button" id="rent-now-button">Rent Now</button>
+            </div>
+        </div>
+
+        <div class="product-tabs">
+            <ul class="tab-list">
+                <li class="tab-item active" onclick="switchTab(0)">Description</li>
+                <li class="tab-item" onclick="switchTab(1)">Specifications</li>
+                <li class="tab-item" onclick="switchTab(2)">Rental Terms</li>
+                <li class="tab-item" onclick="switchTab(3)">Reviews</li>
+            </ul>
+            <div class="tab-content active">
+                <h3>Product Description</h3>
+                <p>The <strong>Brother HL-L2321D</strong> is a powerful and reliable monochrome laser printer designed to deliver high-speed, high-quality prints.  
+                    This printer is perfect for offices, professionals, and students who require a cost-effective and efficient printing solution.  
+                    With its <strong>automatic duplex printing</strong> feature, it reduces paper usage while maintaining professional-grade prints.
+                </p>
+                <p>With a printing speed of up to <strong>30 pages per minute</strong>, the Brother HL-L2321D ensures quick output for documents, reports, and assignments.  
+                    The <strong>high-resolution 2400 x 600 dpi</strong> ensures sharp, clear text and detailed monochrome images.  
+                    The <strong>250-sheet paper tray</strong> reduces the need for frequent refills, allowing uninterrupted workflow.
+                    </p>
+                <p>Designed with space efficiency in mind, this <strong>compact laser printer</strong> easily fits in small offices or home workspaces.  
+                    The robust build ensures durability and long-term performance without frequent maintenance.
+                    </p>
+                
+            </div>
+            <div class="tab-content">
+                <h3>Detailed Specifications</h3>
+                <ul>
+                    <li><strong>Brand:</strong> Brother</li>
+                    <li><strong>Model:</strong> HL-L2321D</li>
+                    <li><strong>Print Technology:</strong> Monochrome Laser</li>
+                    <li><strong>Print Speed:</strong> Up to 30 pages per minute</li>
+                    <li><strong>Resolution:</strong> 2400 x 600 dpi</li>
+                    <li><strong>Paper Capacity:</strong> 250-sheet input tray</li>
+                    <li><strong>Automatic Duplex:</strong> Yes</li>
+                    <li><strong>Connectivity:</strong> USB 2.0</li>
+                    <li><strong>Supported Paper Sizes:</strong> A4, A5, Letter, Legal</li>
+                    <li><strong>Operating System Compatibility:</strong> Windows, Mac, Linux</li>
+                    <li><strong>Monthly Duty Cycle:</strong> Up to 10,000 pages</li>
+                    <li><strong>Dimensions:</strong> 356 x 360 x 183 mm</li>
+                    <li><strong>Weight:</strong> 6.8 kg</li>
+                    <li><strong>Additional Features:</strong> Compact design, energy-saving mode</li>
+                </ul>              
+            </div>
+            <div class="tab-content">
+                <h3>Rental Terms</h3>
+                <p><strong>Rental Period:</strong> Minimum rental period is 1 hour</p>
+                <p><strong>Deposit:</strong> A security deposit of ₹500 is required, refundable upon return in good condition.</p>
+                <p><strong>ID Requirement:</strong> Valid government-issued photo ID required.</p>
+                <p><strong>Pickup/Return:</strong> Equipment must be picked up and returned during business hours (9am-6pm).</p>
+                <p><strong>Late Returns:</strong> Late returns will be charged an additional day's rental fee plus a ₹200 late fee.</p>
+                <p><strong>Damage/Loss:</strong> Renter is responsible for any damage beyond normal wear and tear or loss of equipment.</p>
+                <p><strong>Insurance:</strong> Optional rental insurance available.</p>
+                <p><strong>Cancellation Policy:</strong> Full refund if cancelled 48+ hours before rental. 50% refund if cancelled 24-48 hours before. No refund if cancelled less than 24 hours before rental.</p>
+            </div>
+            <div class="tab-content">
+                <h3>Customer Reviews</h3>
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <h4>Perfect for Office Use</h4>
+                    <p><em>By Monika S. on March 10, 2025</em></p>
+                    <p>This printer is an absolute workhorse! It prints super fast and the duplex feature is a game changer.  
+                    The print quality is sharp and professional, making it ideal for office documents.</p>
+                </div>
+                <hr>
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <h4>Best Printer for Students</h4>
+                    <p><em>By Kamali R. on February 28, 2025</em></p>
+                    <p>I use this printer for my college assignments, and it never disappoints.  
+                    The speed and clarity of the prints are amazing, and the automatic two-sided printing saves paper.  
+                    A great investment for students!</p>
+                </div>
+                <hr>
+                <div class="review">
+                    <div class="stars">★★★★☆</div>
+                    <h4>Good for Home and Small Business</h4>
+                    <p><em>By Guna M. on February 15, 2025</em></p>
+                    <p>The Brother HL-L2321D is a solid printer for home and small office use.  
+                    The print quality is top-notch, and the paper tray capacity is decent.  
+                    I just wish it had wireless connectivity, but other than that, it's excellent.</p>
+                </div>              
+                
+            </div>
+        </div>
+    </main>
+    <div id="rental-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" id="close-modal">&times;</span>
+        <h2 class="form-title">Rent This Combo</h2>
+        <div id="success-message" class="success-message">
+            Thank you! Your rental request has been submitted. We will contact you shortly to confirm your reservation.
+        </div>
+        <form id="rental-form" method="POST" action="https://api.web3forms.com/submit">
+            <input type="hidden" name="access_key" value="2527604e-31e9-410c-8cff-70a52dad9f58">
+            <input type="hidden" name="subject" value="Brother Printer  Rental Request">
+            <input type="hidden" name="product" value="Brother Printer HL-L2321D">
+            <div class="form-group">
+                <label for="product-id" class="form-label">Product Id</label>
+                <input type="text" id="product-id" name="product-id" class="form-input" required value="BP-2025-03-17" readonly>
+                <div class="error-message" id="name-error">Please enter your full name</div>
+            </div>
+            <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+                <div class="error-message" id="name-error">Please enter your full name</div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+                <div class="error-message" id="email-error">Please enter a valid email address</div>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input" required>
+                <div class="error-message" id="phone-error">Please enter a valid phone number</div>
+            </div>
+            <div class="form-group">
+                <label for="pickup-date" class="form-label">Pickup Date & Time</label>
+                <input type="datetime-local" id="pickup-date" name="pickup-date" class="form-input" required>
+                <div class="error-message" id="pickup-error">Please select a valid pickup date and time</div>
+            </div>
+
+            <!-- Rental Duration Selection -->
+            <div class="form-group">
+                <label for="duration-number" class="form-label">Rental Duration</label>
+                <div class="duration-container">
+                    <select id="duration-number" name="duration-number" class="form-select" required>
+                        <option value="">Select Duration</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="7">7</option>
+                        <option value="14">14</option>
+                        <option value="30">30</option>
+                    </select>
+                    <select id="duration-unit" name="duration-unit" class="form-select" required>
+                        <option value="">Select Unit</option>
+                        <option value="hours">Hours</option>
+                        <option value="days">Days</option>
+                        <option value="weeks">Weeks</option>
+                    </select>
+                </div>
+                <div class="error-message" id="duration-error">Please select a rental duration</div>
+            </div>
+
+            <!-- Rental Type Selection -->
+            <div class="form-group">
+                <label for="rental-type" class="form-label">Rental Type</label>
+                <select id="rental-type" name="rental-type" class="form-select" required>
+                    <option value="">Select Option</option>
+                    <option value="pickup">Pickup from Store</option>
+                    <option value="delivery">Home Delivery (within 5 km in Namakkal)</option>
+                </select>
+                <div class="error-message" id="rental-type-error">Please select a rental type</div>
+            </div>
+
+            <!-- Aadhaar Requirement Notice -->
+            <div class="form-group">
+                <p class="aadhaar-notice"><strong>Important:</strong> You must bring your <strong>original Aadhaar</strong> or a <strong>colored Aadhaar Xerox</strong> for verification at the time of pickup/delivery.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="comments" class="form-label">Comments or Special Requirements</label>
+                <textarea id="comments" name="comments" class="form-input" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="form-submit" id="form-submit-button">Submit Rental Request</button>
+        </form>
+    </div>
+</div>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 RentEverything.Shop. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Service</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    <script src="product_page2.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - RentEverything.Shop</title>
+    <link href="product_page2.css" rel="stylesheet">
+    <link rel="icon" type="png" href="images/favicon.png" sizes="512x512">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🛒</span>
+                <span>RentEverything.Shop</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Products</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="separator">›</span>
+            <a href="#">Products</a>
+            <span class="separator">›</span>
+            <span>Dell Keyboard with Mouse</span>
+        </div>
+
+        <div class="product-container">
+            <div class="product-images">
+                <div class="main-image-container">
+                    <img src="images/keyboard_mouse/keyboard1.jpg" alt="Dell Keyboard with Mouse" class="main-image" id="main-product-image">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="images/keyboard_mouse/keyboard1.jpg" alt="keyboard Thumbnail 1" class="thumbnail active" onclick="changeImage(this)">
+                    <img src="images/keyboard_mouse/keyboard2.jpg" alt="keyboard Thumbnail 2" class="thumbnail" onclick="changeImage(this)">
+                    <img src="images/keyboard_mouse/keyboard3.jpg" alt="keyboard Thumbnail 3" class="thumbnail" onclick="changeImage(this)">
+                    <img src="images/keyboard_mouse/keyboard4.jpg" alt="keyboard Thumbnail 4" class="thumbnail" onclick="changeImage(this)">
+                    <img src="images/keyboard_mouse/keyboard5.jpg" alt="keyboard Thumbnail 5" class="thumbnail" onclick="changeImage(this)">
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Dell Keyboard with Mouse</h1>
+                <p class="product-category">Category: Computer Accessories & Peripherals</p>
+                <p class="product-price">₹199/day</p>
+                <p class="availability">✓ Available Now</p>
+                <div class="product-rating">
+                    <div class="stars">★★★★★</div>
+                    <span class="review-count">(57 reviews)</span>
+                </div>
+                <div class="product-description">
+                    <p>The Dell KM3322W is a reliable and durable wireless keyboard and mouse combo designed for smooth and efficient typing. </p>
+                </div>
+                
+                <div class="product-specs">
+                    <h3>Specifications:</h3>
+                    <ul class="spec-list">
+                        <li><span>Brand:</span> <span>Dell </span></li>
+                        <li><span>Model:</span> <span>KM3322W </span></li>
+                        <li><span>Keyboard Type:</span> <span> Wireless Full-Size Keyboard</span></li>
+                        <li><span>Connectivity:</span> <span>2.4GHz Wireless via USB Receiver</span></li>
+                        <li><span>Battery Life:</span> <span>Up to 36 months (AA batteries included)</span></li>
+                    </ul>
+                </div>
+                
+                <button class="rent-button" id="rent-now-button">Rent Now</button>
+            </div>
+        </div>
+
+        <div class="product-tabs">
+            <ul class="tab-list">
+                <li class="tab-item active" onclick="switchTab(0)">Description</li>
+                <li class="tab-item" onclick="switchTab(1)">Specifications</li>
+                <li class="tab-item" onclick="switchTab(2)">Rental Terms</li>
+                <li class="tab-item" onclick="switchTab(3)">Reviews</li>
+            </ul>
+            <div class="tab-content active">
+                <h3>Product Description</h3>
+                <p>The Dell KM3322W is a reliable and durable wireless keyboard and mouse combo designed for smooth and efficient typing. </p>
+                <p>With a powerful UHF frequency range (400-470MHz), this walkie-talkie ensures clear and uninterrupted audio transmission, even in challenging terrains. Its 16 pre-programmed channels allow for quick and easy switching between communication groups, making it highly functional for teams.</p>
+                <p>Whether you're coordinating security teams, organizing outdoor events, or exploring remote areas, the Baofeng Walkie-Talkie Set delivers exceptional performance, durability, and ease of use for all your communication needs. 🚀</p>
+                
+            </div>
+            <div class="tab-content">
+                <h3>Detailed Specifications</h3>
+                <ul>
+                    <li><strong>Brand:</strong> Dell (or similar)</li>
+                    <li><strong>Model:</strong> KM3322W (or similar)</li>
+            
+                    <li><strong>Keyboard Type:</strong> Wireless Full-Size Keyboard</li>
+                    <li><strong>Connectivity:</strong> 2.4GHz Wireless via USB Receiver</li>
+                    <li><strong>Battery Life:</strong> Up to 36 months (AA batteries included)</li>
+                    <li><strong>Key Type:</strong> Chiclet-style, silent, and responsive keys</li>
+                    <li><strong>Spill-Resistant:</strong> Yes</li>
+                    <li><strong>Weight:</strong> Approx. 500g</li>
+                    <li><strong>Operating System Compatibility:</strong> Windows, macOS, Linux</li>
+            
+                    <li><strong>Mouse Type:</strong> Wireless Optical Mouse</li>
+                    <li><strong>Sensor:</strong> Optical sensor for precise tracking</li>
+                    <li><strong>DPI:</strong> Adjustable DPI for smooth navigation</li>
+                    <li><strong>Mouse Battery Life:</strong> Up to 18 months</li>
+                    <li><strong>Mouse Weight:</strong> Approx. 80g</li>
+                    <li><strong>Mouse Ergonomics:</strong> Comfortable grip for extended use</li>
+            
+                    <li><strong>Wireless Range:</strong> Up to 10 meters</li>
+                    <li><strong>Design:</strong> Durable, lightweight, and comfortable</li>
+                    <li><strong>Additional Features:</strong> Plug & Play setup, spill-resistant, long-lasting battery</li>
+                </ul>              
+            </div>
+            <div class="tab-content">
+                <h3>Rental Terms</h3>
+                <p><strong>Rental Period:</strong> Minimum rental period is 1 hour</p>
+                <p><strong>Deposit:</strong> A security deposit of ₹500 is required, refundable upon return in good condition.</p>
+                <p><strong>ID Requirement:</strong> Valid government-issued photo ID required.</p>
+                <p><strong>Pickup/Return:</strong> Equipment must be picked up and returned during business hours (9am-6pm).</p>
+                <p><strong>Late Returns:</strong> Late returns will be charged an additional day's rental fee plus a ₹200 late fee.</p>
+                <p><strong>Damage/Loss:</strong> Renter is responsible for any damage beyond normal wear and tear or loss of equipment.</p>
+                <p><strong>Insurance:</strong> Optional rental insurance available.</p>
+                <p><strong>Cancellation Policy:</strong> Full refund if cancelled 48+ hours before rental. 50% refund if cancelled 24-48 hours before. No refund if cancelled less than 24 hours before rental.</p>
+            </div>
+            <div class="tab-content">
+                <h3>Customer Reviews</h3>
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <h4>Perfect for Work and Study</h4>
+                    <p><em>By Prakash R. on February 28, 2025</em></p>
+                    <p>I rented this keyboard and mouse for my home office in Namakkal, and they performed exceptionally well. The keys are soft and responsive, and the mouse feels great in hand. Highly recommended!</p>
+                </div>
+                <hr>
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <h4>Great Wireless Combo</h4>
+                    <p><em>By Kavitha S. on February 15, 2025</em></p>
+                    <p>Used this for my laptop in Namakkal, and the wireless connection was stable throughout. The battery life is amazing, and the keyboard is comfortable for long hours of typing. Would rent again!</p>
+                </div>
+                <hr>
+                <div class="review">
+                    <div class="stars">★★★★☆</div>
+                    <h4>Good, but Mouse Feels Light</h4>
+                    <p><em>By Aravind K. on January 30, 2025</em></p>
+                    <p>The keyboard is excellent, but the mouse feels a little too light for my preference. However, the overall performance is great, and it’s a reliable wireless set.</p>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <div id="rental-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" id="close-modal">&times;</span>
+        <h2 class="form-title">Rent This Combo</h2>
+        <div id="success-message" class="success-message">
+            Thank you! Your rental request has been submitted. We will contact you shortly to confirm your reservation.
+        </div>
+        <form id="rental-form" method="POST" action="https://api.web3forms.com/submit">
+            <input type="hidden" name="access_key" value="2527604e-31e9-410c-8cff-70a52dad9f58">
+            <input type="hidden" name="subject" value="Dell KeyBoard with Mouse Rental Request">
+            <input type="hidden" name="product" value="Dell Keyboard with Mouse">
+            <div class="form-group">
+                <label for="product-id" class="form-label">Product Id</label>
+                <input type="text" id="product-id" name="product-id" class="form-input" required value="DKM-2025-03-15" readonly>
+                <div class="error-message" id="name-error">Please enter your full name</div>
+            </div>
+            <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+                <div class="error-message" id="name-error">Please enter your full name</div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+                <div class="error-message" id="email-error">Please enter a valid email address</div>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input" required>
+                <div class="error-message" id="phone-error">Please enter a valid phone number</div>
+            </div>
+            <div class="form-group">
+                <label for="pickup-date" class="form-label">Pickup Date & Time</label>
+                <input type="datetime-local" id="pickup-date" name="pickup-date" class="form-input" required>
+                <div class="error-message" id="pickup-error">Please select a valid pickup date and time</div>
+            </div>
+
+            <!-- Rental Duration Selection -->
+            <div class="form-group">
+                <label for="duration-number" class="form-label">Rental Duration</label>
+                <div class="duration-container">
+                    <select id="duration-number" name="duration-number" class="form-select" required>
+                        <option value="">Select Duration</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="7">7</option>
+                        <option value="14">14</option>
+                        <option value="30">30</option>
+                    </select>
+                    <select id="duration-unit" name="duration-unit" class="form-select" required>
+                        <option value="">Select Unit</option>
+                        <option value="hours">Hours</option>
+                        <option value="days">Days</option>
+                        <option value="weeks">Weeks</option>
+                    </select>
+                </div>
+                <div class="error-message" id="duration-error">Please select a rental duration</div>
+            </div>
+
+            <!-- Rental Type Selection -->
+            <div class="form-group">
+                <label for="rental-type" class="form-label">Rental Type</label>
+                <select id="rental-type" name="rental-type" class="form-select" required>
+                    <option value="">Select Option</option>
+                    <option value="pickup">Pickup from Store</option>
+                    <option value="delivery">Home Delivery (within 5 km in Namakkal)</option>
+                </select>
+                <div class="error-message" id="rental-type-error">Please select a rental type</div>
+            </div>
+
+            <!-- Aadhaar Requirement Notice -->
+            <div class="form-group">
+                <p class="aadhaar-notice"><strong>Important:</strong> You must bring your <strong>original Aadhaar</strong> or a <strong>colored Aadhaar Xerox</strong> for verification at the time of pickup/delivery.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="comments" class="form-label">Comments or Special Requirements</label>
+                <textarea id="comments" name="comments" class="form-input" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="form-submit" id="form-submit-button">Submit Rental Request</button>
+        </form>
+    </div>
+</div>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 RentEverything.Shop. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Service</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    <script src="product_page2.js"></script>
+    
+</body>
+</html>

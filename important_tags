@@ -1,0 +1,65 @@
+<!-- <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/drone.jpg" alt="Drone">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-title">Drone</div>
+                        <div class="product-price">
+                            <div class="monthly-rent">₹1,349/mo</div>
+                            <div class="original-price">₹1,899</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/hp_laptop.jpg" alt="Laptop">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-title">HP 15" Core i5 Laptop</div>
+                        <div class="product-price">
+                            <div class="monthly-rent">₹1,949/mo</div>
+                            <div class="original-price">₹2,499</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/projector.png" alt="Bed">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-title">Projectors</div>
+                        <div class="product-price">
+                            <div class="monthly-rent">₹799/mo</div>
+                            <div class="original-price">₹1,199</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/microwave.jpg" alt="Bed">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-title">Queen Size Bed with Storage</div>
+                        <div class="product-price">
+                            <div class="monthly-rent">₹799/mo</div>
+                            <div class="original-price">₹1,199</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/laptop_cooler.jpg" alt="Bed">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-title">Queen Size Bed with Storage</div>
+                        <div class="product-price">
+                            <div class="monthly-rent">₹799/mo</div>
+                            <div class="original-price">₹1,199</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div> -->

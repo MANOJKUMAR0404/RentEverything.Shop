@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - RentEverything.Shop</title>
+    <link href="product_page2.css" rel="stylesheet">
+    <link rel="icon" type="png" href="images/favicon.png" sizes="512x512">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🛒</span>
+                <span>RentEverything.Shop</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Products</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="separator">›</span>
+            <a href="#">Products</a>
+            <span class="separator">›</span>
+            <span>Classrooms</span>
+        </div>
+
+        <div class="product-container">
+            <div class="product-images">
+                <div class="main-image-container">
+                    <img src="images/classroom/classroom3.jpg" alt="Ring Light" class="main-image" id="main-product-image">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="images/classroom/classroom3.jpg" alt="classroom Thumbnail 1" class="thumbnail active" onclick="changeImage(this)">
+                    <img src="images/classroom/classroom4.jpg" alt="Light Thumbnail 2" class="thumbnail" onclick="changeImage(this)">
+                    <img src="images/classroom/classroom1.jpg" alt="Light Thumbnail 3" class="thumbnail" onclick="changeImage(this)">
+                    <img src="images/classroom/classroom6.jpg" alt="Light Thumbnail 4" class="thumbnail" onclick="changeImage(this)">
+                    <img src="images/classroom/classroom7.jpg" alt="Light Thumbnail 5" class="thumbnail" onclick="changeImage(this)">
+                    
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Classroom Setup for Rent – Chairs, Desks, TV & Whiteboard</h1>
+                <p class="product-category">Category: Educational Furniture & Equipment Rental</p>
+                <p class="product-price">₹299/day</p>
+                <p class="availability">✓ Available Now</p>
+                <div class="product-rating">
+                    <div class="stars">★★★★★</div>
+                    <span class="review-count">(184 reviews)</span>
+                </div>
+                <div class="product-description">
+                    <p>The <strong>Classroom Setup Rental</strong> is a complete solution for <strong>schools, coaching centers, training institutes, and corporate workshops</strong>.  
+                        It includes <strong>10 student desks</strong>, <strong>10 comfortable chairs</strong>, a <strong>WiFi-enabled TV for online learning</strong>, and a <strong> whiteboard</strong>.  
+                        Additional seating can be provided based on requirements.  
+                        This setup ensures a <strong>professional and productive learning environment</strong> for students and attendees.</p>
+                        </p>
+                </div>
+                
+                <div class="product-specs">
+                    <h3>Specifications:</h3>
+                    <ul class="spec-list">
+                        <li><span>Seating Capacity:</span> <span>10 student desks with ergonomic chairs</span></li>
+                        <li><span>TV :</span> <span>Large WiFi-enabled smart TV for online classes and presentations</span></li>
+                        <li><span>Whiteboard:</span> <span> Whiteboard with marker and eraser</span></li>
+                        <li><span>Customization:</span> <span>Additional desks and chairs can be arranged</span></li>
+                        <li><span>Ideal For:</span> <span>Schools,coaching,training and workshops</span></li>
+                    </ul>
+                </div>
+                
+                <button class="rent-button" id="rent-now-button">Rent Now</button>
+            </div>
+        </div>
+
+        <div class="product-tabs">
+            <ul class="tab-list">
+                <li class="tab-item active" onclick="switchTab(0)">Description</li>
+                <li class="tab-item" onclick="switchTab(1)">Specifications</li>
+                <li class="tab-item" onclick="switchTab(2)">Rental Terms</li>
+                <li class="tab-item" onclick="switchTab(3)">Reviews</li>
+            </ul>
+            <div class="tab-content active">
+                <h3>Product Description</h3>
+                <p>The <strong>Complete Classroom Setup for Rent</strong> provides a professional and well-organized learning space.  
+                    It features <strong>10 high-quality student desks</strong> with spacious tabletops and <strong>ergonomic chairs</strong> for comfortable seating.  
+                    The setup includes a <strong>WiFi-enabled smart TV</strong>, allowing teachers and trainers to conduct **online classes, video lessons, and live sessions**.  
+                    A <strong>magnetic whiteboard</strong> is also included for traditional teaching methods, presentations, and brainstorming sessions.</p>                    
+                <p>For flexibility, we offer <strong>additional chairs</strong> based on your seating needs, making it perfect for <strong>exams, workshops, and coaching classes</strong>.  
+                    This rental package is an excellent choice for <strong>temporary classroom setups, corporate training events, and educational institutions</strong>  
+                    looking for cost-effective learning solutions. </p>
+                
+            </div>
+            <div class="tab-content">
+                <h3>Detailed Specifications</h3>
+                <ul>
+                    <li><strong>Desks:</strong> 10 student desks with durable wooden tops</li>
+                    <li><strong>TV Display:</strong> Large smart TV with WiFi and HDMI support</li>
+                    <li><strong>Whiteboard:</strong> Normal WhiteBoard with easy-wipe marker support</li>
+                    <li><strong>Internet Connectivity:</strong> Supports WiFi for online learning</li>
+                    <li><strong>Setup Flexibility:</strong> Customizable seating arrangements</li>
+                    <li><strong>Ideal Usage:</strong> Schools, coaching centers, training institutes, corporate seminars</li>
+                    <li><strong>Rental Duration:</strong> Flexible options – daily, weekly, or monthly</li>
+                    <li><strong>Condition:</strong> Well-maintained and sanitized before use</li>
+                </ul>              
+            </div>
+            <div class="tab-content">
+                <h3>Rental Terms</h3>
+                <p><strong>Rental Period:</strong> Minimum rental period is 1 hour</p>
+                <p><strong>Deposit:</strong> A security deposit of ₹500 is required, refundable upon return in good condition.</p>
+                <p><strong>ID Requirement:</strong> Valid government-issued photo ID required.</p>
+                <p><strong>Pickup/Return:</strong> Equipment must be picked up and returned during business hours (9am-6pm).</p>
+                <p><strong>Late Returns:</strong> Late returns will be charged an additional day's rental fee plus a ₹200 late fee.</p>
+                <p><strong>Damage/Loss:</strong> Renter is responsible for any damage beyond normal wear and tear or loss of equipment.</p>
+                <p><strong>Insurance:</strong> Optional rental insurance available.</p>
+                <p><strong>Cancellation Policy:</strong> Full refund if cancelled 48+ hours before rental. 50% refund if cancelled 24-48 hours before. No refund if cancelled less than 24 hours before rental.</p>
+           </div>
+            <div class="tab-content">
+                <h3>Customer Reviews</h3>
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <h4>Best Setup for Coaching Classes</h4>
+                    <p><em>By Monish R. on March 18, 2025</em></p>
+                    <p>I rented this setup for my coaching center in Namakkal, and it was perfect.  
+                    The desks and chairs were comfortable, and the smart TV helped with online lessons.  
+                    Delivery and setup were smooth. Highly recommended!</p>
+                </div>
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <h4>Excellent for Training Sessions</h4>
+                    <p><em>By MadhuShree K. on February 28, 2025</em></p>
+                    <p>We used this classroom setup for a one-week corporate training.  
+                    The TV with WiFi was great for presentations, and the whiteboard was a useful addition.  
+                    Will rent again for future sessions!</p>
+                </div>
+                <div class="review">
+                    <div class="stars">★★★★☆</div>
+                    <h4>Good Quality but Needs More Seating</h4>
+                    <p><em>By Abinithi M. on February 12, 2025</em></p>
+                    <p>The classroom setup was great, but we needed extra chairs.  
+                    Fortunately, additional seating was provided on request. Overall, a good rental package.</p>
+                </div>          
+                
+            </div>
+        </div>
+    </main>
+    <div id="rental-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" id="close-modal">&times;</span>
+        <h2 class="form-title">Rent This Combo</h2>
+        <div id="success-message" class="success-message">
+            Thank you! Your rental request has been submitted. We will contact you shortly to confirm your reservation.
+        </div>
+        <form id="rental-form" method="POST" action="https://api.web3forms.com/submit">
+            <input type="hidden" name="access_key" value="2527604e-31e9-410c-8cff-70a52dad9f58">
+            <input type="hidden" name="subject" value="Classroom  Rental Request">
+            <input type="hidden" name="product" value="CLassrooms">
+            <div class="form-group">
+                <label for="product-id" class="form-label">Product Id</label>
+                <input type="text" id="product-id" name="product-id" class="form-input" required value="CLRM-2025-03-14" readonly>
+                <div class="error-message" id="name-error">Please enter your full name</div>
+            </div>
+            <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+                <div class="error-message" id="name-error">Please enter your full name</div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+                <div class="error-message" id="email-error">Please enter a valid email address</div>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input" required>
+                <div class="error-message" id="phone-error">Please enter a valid phone number</div>
+            </div>
+            <div class="form-group">
+                <label for="pickup-date" class="form-label">Pickup Date & Time</label>
+                <input type="datetime-local" id="pickup-date" name="pickup-date" class="form-input" required>
+                <div class="error-message" id="pickup-error">Please select a valid pickup date and time</div>
+            </div>
+
+            <!-- Rental Duration Selection -->
+            <div class="form-group">
+                <label for="duration-number" class="form-label">Rental Duration</label>
+                <div class="duration-container">
+                    <select id="duration-number" name="duration-number" class="form-select" required>
+                        <option value="">Select Duration</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="7">7</option>
+                        <option value="14">14</option>
+                        <option value="30">30</option>
+                    </select>
+                    <select id="duration-unit" name="duration-unit" class="form-select" required>
+                        <option value="">Select Unit</option>
+                        <option value="hours">Hours</option>
+                        <option value="days">Days</option>
+                        <option value="weeks">Weeks</option>
+                    </select>
+                </div>
+                <div class="error-message" id="duration-error">Please select a rental duration</div>
+            </div>
+
+            <!-- Rental Type Selection -->
+            <div class="form-group">
+                <label for="rental-type" class="form-label">Rental Type</label>
+                <select id="rental-type" name="rental-type" class="form-select" required>
+                    <option value="">Select Option</option>
+                    <option value="pickup">Pickup from Store</option>
+                    <option value="delivery">Home Delivery (within 5 km in Namakkal)</option>
+                </select>
+                <div class="error-message" id="rental-type-error">Please select a rental type</div>
+            </div>
+
+            <!-- Aadhaar Requirement Notice -->
+            <div class="form-group">
+                <p class="aadhaar-notice">**Important:** You must bring your **original Aadhaar** or a **colored Aadhaar Xerox** for verification at the time of pickup/delivery.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="comments" class="form-label">Comments or Special Requirements</label>
+                <textarea id="comments" name="comments" class="form-input" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="form-submit" id="form-submit-button">Submit Rental Request</button>
+        </form>
+    </div>
+</div>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 RentEverything.Shop. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Service</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    <script src="product_page2.js"></script>
+    
+</body>
+</html>
