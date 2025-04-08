@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get Location</title>
+  <style>
+    body {
+      background: #f9fafb;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .location-box {
+      background: white;
+      padding: 2rem 3rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .coordinates {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #2563eb;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="location-box">
+    <h1>Your Current Location</h1>
+    <div class="coordinates" id="location">Getting location...</div>
+  </div>
+
+  <script>
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const lat = position.coords.latitude.toFixed(6);
+          const lon = position.coords.longitude.toFixed(6);
+          document.getElementById("location").innerHTML = `Latitude: ${lat}<br>Longitude: ${lon}`;
+        },
+        (error) => {
+          document.getElementById("location").innerHTML = "<span class='error'>Location access denied or unavailable.</span>";
+          console.error("Error getting location:", error);
+        }
+      );
+    } else {
+      document.getElementById("location").innerHTML = "<span class='error'>Geolocation is not supported by this browser.</span>";
+    }
+  </script>
+</body>
+</html>

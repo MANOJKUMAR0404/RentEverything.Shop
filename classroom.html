@@ -222,6 +222,18 @@
                 </select>
                 <div class="error-message" id="rental-type-error">Please select a rental type</div>
             </div>
+            <div class="form-group">
+                <label for="location-select" class="form-label">Select Location</label>
+                <select id="location_value" name="location_type" class="form-select" required>
+                    <option value="">Select Option</option>
+                    <option value="Namakkal">Namakkal</option>
+                    <option value="Tiruchengode">Tiruchengode</option>
+                    <option value="Rasipuram">Rasipuram</option>
+                    <option value="Mohanur">Mohanur</option>
+                </select>
+                <div class="error-message" id="location-error">Please select location</div>
+            </div>
+            <input type="hidden" id="location" name="location" value="">
 
             <!-- Aadhaar Requirement Notice -->
             <div class="form-group">
@@ -251,6 +263,7 @@
         </div>
     </footer>
     <script src="product_page2.js"></script>
+    <script src="location.js"></script>
     
 </body>
 </html>
