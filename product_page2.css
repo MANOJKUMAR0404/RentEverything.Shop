@@ -561,3 +561,67 @@ footer .container {
         width: 95%;
     }
 }
+
+
+@media (max-width: 480px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .main-image-container {
+        height: 250px;
+    }
+
+    .thumbnail {
+        width: 50px;
+        height: 50px;
+    }
+
+    .product-title {
+        font-size: 1.4rem;
+    }
+
+    .product-price {
+        font-size: 1.2rem;
+    }
+
+    .form-title {
+        font-size: 1.2rem;
+    }
+
+    .form-input,
+    .form-select {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .form-submit {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .tab-content {
+        padding: 15px;
+    }
+
+    .review h4 {
+        font-size: 1rem;
+    }
+
+    .modal-content {
+        padding: 20px;
+    }
+
+    .zoom-result {
+        display: none !important; /* Disable zoom on mobile for usability */
+    }
+
+    .zoom-lens {
+        display: none !important;
+    }
+}
